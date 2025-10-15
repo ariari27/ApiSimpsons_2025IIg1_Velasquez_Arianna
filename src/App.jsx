@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar.jsx';
 import Main from './components/Main/Main.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/ApiSimpsons_2025IIg1_Velasquez_Arianna/">
       <NavBar />
       <Main>
         <Routes>
@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </Main>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
