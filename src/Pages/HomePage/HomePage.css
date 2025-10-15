@@ -1,0 +1,134 @@
+/* === CONTENEDOR PRINCIPAL === */
+.home-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* ✅ Para mantener orden en vertical */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 80px);
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+/* === CONTENIDO CON DESENFOQUE === */
+.home-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    animation: popIn 0.8s ease forwards;
+    width: 100%;
+    max-width: 100vw;
+    margin-bottom: 2rem;
+}
+
+.home-content img, .home-content * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* === TÍTULO PRINCIPAL === */
+.home-title {
+    font-family: 'Simpsonfont' !important;
+    color: #ffeb3b;
+    text-shadow: 2px 3px 0 #000;
+    margin-bottom: 1.5rem !important;
+}
+
+/* === SUBTÍTULO === */
+.home-subtitle {
+    font-family: 'Poppins', sans-serif !important;
+    color: #111;
+    font-weight: 500;
+    margin-bottom: 2rem !important;
+    line-height: 1.4;
+}
+
+/* === BOTÓN === */
+.home-button {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #fdd835 !important;
+    color: #222 !important;
+    font-size: 1.2rem !important;
+    padding: 0.8rem 2rem !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+    margin-bottom: 2rem !important;
+}
+
+.home-button:hover {
+    background-color: #ffeb3b !important;
+    transform: scale(1.05);
+}
+
+/* === ANIMACIÓN DE ENTRADA === */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7) rotate(-3deg);
+        filter: blur(8px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.05) rotate(1deg);
+        filter: blur(0);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* === RESPONSIVIDAD === */
+@media (max-width: 1024px) {
+    .home-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 2rem 1rem;
+    }
+
+    .home-content {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+
+    .home-title {
+        font-size: 1.8rem !important;
+    }
+
+    .home-subtitle {
+        font-size: 1rem !important;
+    }
+
+    .home-button {
+        font-size: 1rem !important;
+        padding: 0.6rem 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 1.6rem !important;
+    }
+
+    .home-subtitle {
+        font-size: 0.9rem !important;
+    }
+}

@@ -1,0 +1,100 @@
+    .character-card {
+        width: 280px !important;
+        height: auto !important;
+        background: rgba(255, 255, 255, 0.25) !important;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border-radius: 16px !important;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .character-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgb(255, 235, 59);
+    }
+
+    .character-image {
+        width: 250px !important;
+        height: 250px !important;
+        object-fit: cover !important;
+        margin: 1rem auto 0;
+    }
+
+    .character-info {
+        text-align: center;
+    }
+
+    .character-name {
+        font-family: 'Simpsonfont' !important;
+        color: #ffeb3b;
+        text-shadow: 1px 1px 0 #000;
+        -webkit-line-clamp: 1 !important;
+        line-clamp: 1 !important;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .character-occupation {
+        font-family: 'Nunito', sans-serif !important;
+        color: #111;
+        opacity: 0.85;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: calc();
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-height: 3em;
+    }
+
+    .container-age-status {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0.5rem;
+    }
+
+    .character-age,
+    .character-status {
+        font-family: 'Nunito', sans-serif !important;
+        color: #111;
+        opacity: 0.85;
+        font-size: 0.875rem;
+        background: fixed;
+        background-attachment: fixed;
+        padding: 0.25rem 0.5rem;
+        border-radius: 5px;
+        background-color: #ffffff94;
+    }
+
+    .character-status {
+        font-family: 'Nunito', sans-serif !important;
+        opacity: 0.85;
+        font-size: 0.875rem;
+        background: fixed;
+        background-attachment: fixed;
+        padding: 0.25rem 0.5rem;
+        border-radius: 5px;
+        background-color: #ffffff94;
+    }
+
+    .character-quote {
+        font-family: 'Nunito', sans-serif !important;
+        font-style: italic;
+        color: #111 !important;
+        font-weight: 300 !important;
+        font-size: .875rem !important;
+        margin-top: 0.5rem !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: calc();
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-height: 3em;
+    }
+
+    .character-link {
+    text-decoration: none;
+}

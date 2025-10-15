@@ -1,0 +1,98 @@
+/* === CARD PRINCIPAL === */
+.daily-character-card {
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* nunca excede 300px */
+    box-sizing: border-box;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.daily-character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgb(255, 235, 59);
+}
+
+/* === TÍTULOS === */
+.daily-character-title {
+    font-family: "Simpsonfont" !important;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 0 #000;
+    margin-bottom: 1rem !important;
+    line-height: 1.1;
+}
+
+.daily-character-subtitle {
+    font-family: 'Poppins' !important;
+    color: #111;
+    font-weight: 500 !important;
+    margin-bottom: 1rem !important;
+}
+
+/* === IMAGEN === */
+.daily-character-img {
+    width: 100%;           /* se adapta al ancho de la card */
+    max-width: 180px;      /* no excede 180px */
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 8px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+/* === FRASE DEL PERSONAJE === */
+.daily-character-quote {
+    font-family: 'Nunito' !important;
+    font-style: italic;
+    color: #111 !important;
+    font-weight: 500;
+    line-height: 1.3;
+    padding: 0 0.5rem;
+}
+    .character-link {
+    text-decoration: none;
+}
+
+/* === RESPONSIVIDAD === */
+@media (max-width: 768px) {
+    .daily-character-card {
+        max-width: 260px;
+        padding: 0.8rem;
+    }
+
+    .daily-character-img {
+        max-width: 150px;
+    }
+
+    .daily-character-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .daily-character-card {
+        width: 90%;  /* se ajusta al ancho de la pantalla */
+        padding: 0.6rem;
+    }
+
+    .daily-character-img {
+        max-width: 130px;
+    }
+
+    .daily-character-title {
+        font-size: 1rem;
+    }
+
+    .daily-character-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .daily-character-quote {
+        font-size: 0.8rem;
+    }
+}

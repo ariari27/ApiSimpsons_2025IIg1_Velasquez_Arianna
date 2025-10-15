@@ -1,0 +1,146 @@
+/* === ESTILO GENERAL === */
+.navbar-appbar {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+    width: 100vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 1000;
+}
+
+.navbar-placeholder {
+    height: 120px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    min-height: 64px;
+    /* mantiene altura uniforme */
+}
+
+/* === Imagen de la familia === */
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+}
+
+.img-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.navbar-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.4));
+    transition: transform 0.3s ease;
+
+}
+
+.navbar-img:hover {
+    transform: scale(1.05);
+}
+
+/* === TÍTULO === */
+.navbar-title {
+    font-family: 'Simpsonfont' !important;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 0 #000 !important;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.navbar-title:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* === BOTONES DESKTOP === */
+.navbar-links {
+    display: none;
+}
+
+.navbar-link {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: #222 !important;
+    transition: 0.3s ease;
+    border-radius: 8px;
+    text-transform: none !important;
+}
+
+.navbar-link:hover {
+    background-color: #fdd835 !important;
+    /* Amarillo Simpsons */
+    color: #000 !important;
+}
+
+/* === MENÚ HAMBURGUESA === */
+.menu-button {
+    display: block;
+}
+
+/* === DRAWER (menú móvil) === */
+.navbar-drawer {
+    box-sizing: border-box;
+    width: clamp(200px, 25vw, 300px);
+    background-color: #0099d1;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.drawer-item {
+    color: #fff !important;
+    font-weight: 600 !important;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.drawer-item:hover {
+    background-color: #fdd835 !important;
+    color: #000 !important;
+}
+
+/* === RESPONSIVIDAD === */
+@media (max-width: 768px) {
+    .navbar-img {
+        height: 40px ;
+    }
+
+    .navbar-title {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+        display: none !important;
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+    }
+}

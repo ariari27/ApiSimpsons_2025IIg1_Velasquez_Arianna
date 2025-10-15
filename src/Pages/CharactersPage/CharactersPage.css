@@ -1,0 +1,53 @@
+.characters-container {
+    text-align: center;
+}
+
+.characters-title {
+    font-family: 'Simpsonfont' !important;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 0 #000;
+    margin-bottom: 4rem !important;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.pagination-btn {
+    background-color: #fdd835 !important;
+    color: #000 !important;
+    font-family: 'Simpsonfont' !important;
+    text-transform: none !important;
+    font-size: 1.1rem !important;
+    border-radius: 12px !important;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.pagination-btn:hover {
+    background-color: #ffeb3b !important;
+    transform: scale(1.05);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 0 #000;
+}

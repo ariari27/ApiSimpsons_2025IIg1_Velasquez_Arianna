@@ -1,0 +1,40 @@
+.locations-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.locations-title {
+    font-family: 'Simpsonfont' !important;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 0 #000;
+    margin-bottom: 2rem !important;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* Paginación */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.pagination-btn {
+    background-color: #ffeb3b !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    text-transform: none !important;
+}
+
+.pagination-info {
+    color: #fff;
+    font-weight: 500;
+}
