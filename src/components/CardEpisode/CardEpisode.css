@@ -1,5 +1,5 @@
 .episode-card {
-    max-width: 340px;
+    max-width: 340px !important;
     background: rgba(255, 255, 255, 0.25) !important;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -67,4 +67,55 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+
+/* === Tablet === */
+@media (max-width: 768px) {
+    .episode-card {
+        max-width: 280px;
+        padding: 0.8rem;
+    }
+
+    .episode-image {
+        height: 150px;
+    }
+
+    .episode-title {
+        font-size: 1.2rem;
+    }
+
+    .episode-date,
+    .episode-season {
+        font-size: 0.8rem;
+    }
+
+    .episode-synopsis {
+        font-size: 0.85rem;
+    }
+}
+
+/* === Mobile === */
+@media (max-width: 480px) {
+    .episode-card {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    .episode-image {
+        height: 120px;
+    }
+
+    .episode-title {
+        font-size: 1rem;
+    }
+
+    .episode-season,
+    .episode-date {
+        font-size: 0.75rem;
+    }
+
+    .episode-synopsis {
+        font-size: 0.8rem;
+    }
 }
